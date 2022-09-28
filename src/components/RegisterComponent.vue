@@ -1,6 +1,11 @@
 <template>
     <div>
-        <form id="login-form">
+        <form id="register-form">
+
+            <div class="input-container">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" v-model="nome" placeholder="Digite seu nome">
+            </div>
 
             <div class="input-container">
                 <label for="email">Email</label>
@@ -21,12 +26,12 @@
 
 <script>
     export default {
-        name: "LoginComponent"
+        name: "RegisterComponent"
     }
 </script>
 
 <style lang="scss" scoped>
-    #login-form {
+    #register-form {
         max-width: 400px;
         margin: 0 auto;
     }
